@@ -68,7 +68,7 @@ const SplitTextWrapper: React.FC<TextWrapperProps> = ({ children, className }) =
     return (
         <div
             ref={wrapperRef}
-            className={`relative overflow-hidden inline-block cursor-pointer ${className}`}
+            className={`relative overflow-hidden flex cursor-pointer ${className}`}
         >
             {letters.map((item, index) => (
                 <div key={index} className={`inline-block text-center letter-${uniqueId.current}-${index} ${item.classes}`}>
